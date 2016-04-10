@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<!--Import Angularis-->
+		<script type="text/javascript" src="js/angular.min.js">
+		</script>
+		<script src="js/script.js"></script>
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		
+		<h1>How To Calculate</h1>
+		
+		<div class="row z-depth-3 main" >
+			<form class="col s6">
+				<div class = "row textboxs">
+					<div class = "input-field col s6">
+						<p>
+							<input type="text" id="first_value" ng-model="first_value">
+							<label for="first_value">First Value</label>
+						</p>
+						</div>
+					<div class="input-field col s6">
+						<p>
+						 <input type="text" id="second_value">
+							 <label for="second_value">Second Value</label>
+						</p>
+						
+					</div>
+				</div>
+				
+				<div class="row result">
+					<div class="input-field col s12">
+						<input type="text"  id="txtres">
+							<label for="txtres">Result</label>	  
+					</div>
+					
+				</div>
+				
+				<div class="row buttons">
+					<a href="#" class="waves-effect waves-light btn col s6">Calculate</a>
+					<a href="#" class="waves-effect waves-light btn col s6">Reset</a>
+				</div>
+			</form>
+			<form class="col s6">
+				<p>
+					<input type="radio" name="operators" id="rbadd" checked="true">
+					<label for="rbadd">Add</label>
+				</p>
+				<p>
+					<input type="radio" name="operators" id="rbmin">
+					<label for="rbmin">Minus</label>
+				</p>
+				<p>
+					<input type="radio" name="operators" id="rbdiv">
+					<label for="rbdiv">Divide</label>
+				</p>
+				<p>
+					<input type="radio" name="operators" id="rbmul">
+					<label for="rbmul">Multiply</label>
+				</p>
+				<a class="noti">Notification:</a>
+				<a class="noti noticontent">1+2 = {{1+2}}</a>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background: #F1F8E9;
+}
+
+h1 {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    margin-left: 20px;
+    color: #1B5E20;
+  }
+  
+.main{
+    margin: 20px;
+    background: #DCEDC8;
+}
+
+.noti{
+    font-size: 15pt;
+    color: #BF360C;
+}
